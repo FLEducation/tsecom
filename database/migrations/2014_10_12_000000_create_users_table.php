@@ -24,6 +24,7 @@ return new class extends Migration
             $table->string('photo')->nullable();
             $table->string('phone')->nullable();
             $table->text('address')->nullable();
+            $table->date('date_of_birth')->nullable();
 
             $table->string('role')->default(UserRoleEnum::USER_ROLE_3->value);
             $table->string('status')->default(UserStatusEnum::USER_STATUS_2->value);
